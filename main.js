@@ -1,16 +1,16 @@
-rightwristx=0
+rightwristx=0;
 
-rightwristy=0
+rightwristy=0;
 
-leftwristx=0
+leftwristx=0;
 
-leftwristy=0
+leftwristy=0;
 
 leftwristscore=0;
 
 rightwristscore=0;
 
-song=""
+song="";
 
 function setup()
 {
@@ -65,7 +65,7 @@ function draw()
     elseif(rightwristy>400 && rightwristy<=500)
     {
         song.rate(2.5);
-        document.getElementById(speed).innerHTML="Speed: 2.5"
+        document.getElementById(speed).innerHTML="Speed: 2.5";
     }
 }
 
@@ -73,7 +73,7 @@ function draw()
 
 function preload()
 {
-    song=loadSound("music.mp3")
+    song=loadSound("music.mp3");
 }
 
 function play()
