@@ -12,6 +12,11 @@ rightwristscore=0;
 
 song="";
 
+function preload()
+{
+    song=loadSound("music.mp3");
+}
+
 function setup()
 {
     canvas=createCanvas(500, 500);
@@ -37,13 +42,14 @@ function draw()
     }
     
     if (rightwristscore>0.2) 
-    {
+{
     circle(rightwristx, rightwristy, 20);
     if (rightwristy>0 && rightwristy<=100) 
     {
         song.rate(0.5);
         document.getElementById(speed).innerHTML="Speed: 0.5";
     }
+
     elseif(rightwristy>100 && rightwristy<=200) 
     {
         song.rate(1.0);
@@ -69,11 +75,6 @@ function draw()
     }
 }
 
-}
-
-function preload()
-{
-    song=loadSound("music.mp3");
 }
 
 function play()
