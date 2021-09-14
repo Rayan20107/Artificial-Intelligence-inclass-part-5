@@ -39,7 +39,7 @@ function draw()
     volume=removedec/500;
     document.getElementById("div-volume").innerHTML=volume;
     song.setVolume(volume);
-    }
+}
     
     if (rightwristscore>0.2) 
 {
@@ -50,25 +50,25 @@ function draw()
         document.getElementById(speed).innerHTML="Speed: 0.5";
     }
 
-    elseif(rightwristy>100 && rightwristy<=200) 
+    else if(rightwristy>100 && rightwristy<=200) 
     {
         song.rate(1.0);
         document.getElementById(speed).innerHTML="Speed: 1.0";
     }
 
-    elseif(rightwristy>200 && rightwristy<=300)
+    else if(rightwristy>200 && rightwristy<=300)
     {
         song.rate(1.5);
         document.getElementById(speed).innerHTML="Speed: 1.5";
     }
 
-    elseif(rightwristy>300 && rightwristy<=400)
+    else if(rightwristy>300 && rightwristy<=400)
     {
         song.rate(2.0);
         document.getElementById(speed).innerHTML="Speed: 2.0";
     }
 
-    elseif(rightwristy>400 && rightwristy<=500)
+    else if(rightwristy>400 && rightwristy<=500)
     {
         song.rate(2.5);
         document.getElementById(speed).innerHTML="Speed: 2.5";
