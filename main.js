@@ -37,7 +37,7 @@ function draw()
     numleftwristy=Number(leftwristy);
     removedec=floor(numleftwristy);
     volume=removedec/500;
-    document.getElementById("div-volume").innnerHTML=volume;
+    document.getElementById("div-volume").innerHTML=volume;
     song.setVolume(volume);
     }
     
